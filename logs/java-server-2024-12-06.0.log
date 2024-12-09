@@ -1,0 +1,81 @@
+2024-12-06 15:26:28,662 [background-preinit] INFO  o.h.validator.internal.util.Version                - HV000001: Hibernate Validator 6.2.0.Final
+2024-12-06 15:26:28,686 [main] INFO  o.f.t.SpringBootSecurityJwtApplication             - Starting SpringBootSecurityJwtApplication using Java 17.0.8 on LAPTOP-93H8MNO6 with PID 42372 (C:\Users\28425\Downloads\teach-web-master\teach-web\java-server\target\classes started by 28425 in C:\Users\28425\Downloads\teach-web-master\teach-web\java-server)
+2024-12-06 15:26:28,687 [main] INFO  o.f.t.SpringBootSecurityJwtApplication             - No active profile set, falling back to default profiles: default
+2024-12-06 15:26:32,701 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-12-06 15:26:32,703 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-06 15:26:32,952 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 238 ms. Found 20 JPA repository interfaces.
+2024-12-06 15:26:33,324 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@42fb8c87' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-12-06 15:26:33,333 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-12-06 15:26:33,642 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2024-12-06 15:26:33,654 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2024-12-06 15:26:33,654 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2024-12-06 15:26:33,654 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2024-12-06 15:26:33,808 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2024-12-06 15:26:33,809 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 5041 ms
+2024-12-06 15:26:33,941 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-06 15:26:33,999 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2024-12-06 15:26:34,205 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2024-12-06 15:26:34,352 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-06 15:26:34,440 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-12-06 15:26:34,710 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-06 15:26:34,949 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.fatmansoft.teach.sqlite.SQLDialect
+2024-12-06 15:26:36,486 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-06 15:26:36,502 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-06 15:26:39,018 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping              - Adding welcome page: class path resource [public/index.html]
+2024-12-06 15:26:39,176 [main] INFO  o.s.s.web.DefaultSecurityFilterChain               - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34a482d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@44181746, org.springframework.security.web.header.HeaderWriterFilter@11d0bff5, org.springframework.web.filter.CorsFilter@2a738d47, org.springframework.security.web.authentication.logout.LogoutFilter@26f7b114, org.fatmansoft.teach.security.jwt.AuthTokenFilter@47f5ab58, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33a58fcb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d093067, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6939f18a, org.springframework.security.web.session.SessionManagementFilter@f73a7cf, org.springframework.security.web.access.ExceptionTranslationFilter@2bf0bb93, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1bcdd302]
+2024-12-06 15:26:39,607 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2024-12-06 15:26:39,700 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2024-12-06 15:26:39,716 [main] INFO  o.f.t.SpringBootSecurityJwtApplication             - Started SpringBootSecurityJwtApplication in 11.822 seconds (JVM running for 13.064)
+2024-12-06 15:26:39,718 [main] INFO  o.f.t.SpringBootSecurityJwtApplication             - SystemInitStart
+2024-12-06 15:26:39,833 [main] INFO  o.f.t.SpringBootSecurityJwtApplication             - systemInitEnd
+2024-12-06 15:26:40,327 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-06 15:26:40,327 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2024-12-06 15:26:40,328 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 1 ms
+2024-12-06 15:26:41,332 [http-nio-9090-exec-1] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/auth/getValidateCode,,2024-12-06 15:26:40,0.975
+2024-12-06 15:26:41,514 [http-nio-9090-exec-2] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/auth/testValidateInfo,,2024-12-06 15:26:41,0.003
+2024-12-06 15:26:42,224 [http-nio-9090-exec-3] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/auth/login,,2024-12-06 15:26:41,0.401
+2024-12-06 15:26:42,278 [http-nio-9090-exec-4] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/auth/getValidateCode,admin,2024-12-06 15:26:42,0.04
+2024-12-06 15:26:42,604 [http-nio-9090-exec-5] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/base/getMenuList,admin,2024-12-06 15:26:42,0.057
+2024-12-06 15:26:43,032 [http-nio-9090-exec-6] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/statistics/getMainPageData,admin,2024-12-06 15:26:43,0.023
+2024-12-06 15:26:45,770 [http-nio-9090-exec-7] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/course/getCourseList,admin,2024-12-06 15:26:45,0.018
+2024-12-06 15:26:45,794 [http-nio-9090-exec-8] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/teacher/getTeacherList,admin,2024-12-06 15:26:45,0.015
+2024-12-06 15:26:46,464 [http-nio-9090-exec-9] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getScoreList,admin,2024-12-06 15:26:46,0.02
+2024-12-06 15:26:46,485 [http-nio-9090-exec-10] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getStudentItemOptionList,admin,2024-12-06 15:26:46,0.014
+2024-12-06 15:26:46,811 [http-nio-9090-exec-1] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getCourseItemOptionList,admin,2024-12-06 15:26:46,0.018
+2024-12-06 15:26:48,193 [http-nio-9090-exec-2] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/course/getCourseList,admin,2024-12-06 15:26:48,0.016
+2024-12-06 15:26:48,515 [http-nio-9090-exec-3] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/teacher/getTeacherList,admin,2024-12-06 15:26:48,0.012
+2024-12-06 15:26:51,066 [http-nio-9090-exec-4] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/auth/testUserToken,admin,2024-12-06 15:26:51,0.017
+2024-12-06 15:26:54,843 [http-nio-9090-exec-5] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/base/getMenuList,200799013517,2024-12-06 15:26:54,0.021
+2024-12-06 15:26:55,269 [http-nio-9090-exec-6] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/course/getCourseList,200799013517,2024-12-06 15:26:55,0.008
+2024-12-06 15:26:55,289 [http-nio-9090-exec-7] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/teacher/getTeacherList,200799013517,2024-12-06 15:26:55,0.014
+2024-12-06 15:26:58,196 [http-nio-9090-exec-8] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/statistics/getMainPageData,200799013517,2024-12-06 15:26:58,0.009
+2024-12-06 15:26:58,609 [http-nio-9090-exec-9] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/course/getTeacherCourse,200799013517,2024-12-06 15:26:58,0.015
+2024-12-06 15:26:59,999 [http-nio-9090-exec-1] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getScoreList,200799013517,2024-12-06 15:26:59,0.021
+2024-12-06 15:27:00,000 [http-nio-9090-exec-10] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getScoreList,200799013517,2024-12-06 15:26:59,0.025
+2024-12-06 15:27:00,325 [http-nio-9090-exec-2] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getStudentItemOptionList,200799013517,2024-12-06 15:27:00,0.011
+2024-12-06 15:27:00,327 [http-nio-9090-exec-3] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getStudentItemOptionList,200799013517,2024-12-06 15:27:00,0.008
+2024-12-06 15:27:00,592 [http-nio-9090-exec-4] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getCourseItemOptionList,200799013517,2024-12-06 15:27:00,0.019
+2024-12-06 15:27:00,652 [http-nio-9090-exec-5] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getCourseItemOptionList,200799013517,2024-12-06 15:27:00,0.016
+2024-12-06 15:29:03,163 [http-nio-9090-exec-6] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/course/getTeacherCourse,200799013517,2024-12-06 15:29:03,0.011
+2024-12-06 15:29:04,224 [http-nio-9090-exec-7] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getScoreList,200799013517,2024-12-06 15:29:04,0.018
+2024-12-06 15:29:04,227 [http-nio-9090-exec-8] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getScoreList,200799013517,2024-12-06 15:29:04,0.02
+2024-12-06 15:29:04,245 [http-nio-9090-exec-1] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getStudentItemOptionList,200799013517,2024-12-06 15:29:04,0.013
+2024-12-06 15:29:04,245 [http-nio-9090-exec-9] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getStudentItemOptionList,200799013517,2024-12-06 15:29:04,0.014
+2024-12-06 15:29:04,257 [http-nio-9090-exec-10] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getCourseItemOptionList,200799013517,2024-12-06 15:29:04,0.006
+2024-12-06 15:29:04,561 [http-nio-9090-exec-2] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getCourseItemOptionList,200799013517,2024-12-06 15:29:04,0.007
+2024-12-06 15:29:12,138 [http-nio-9090-exec-3] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/base/getMenuList,admin,2024-12-06 15:29:12,0.032
+2024-12-06 15:29:12,578 [http-nio-9090-exec-4] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/course/getTeacherCourse,admin,2024-12-06 15:29:12,0.008
+2024-12-06 15:29:12,739 [http-nio-9090-exec-5] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/statistics/getMainPageData,admin,2024-12-06 15:29:12,0.009
+2024-12-06 15:29:13,190 [http-nio-9090-exec-6] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/course/getCourseList,admin,2024-12-06 15:29:13,0.008
+2024-12-06 15:29:13,204 [http-nio-9090-exec-7] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/teacher/getTeacherList,admin,2024-12-06 15:29:13,0.007
+2024-12-06 15:29:20,784 [http-nio-9090-exec-8] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getScoreList,admin,2024-12-06 15:29:20,0.017
+2024-12-06 15:29:20,801 [http-nio-9090-exec-1] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getStudentItemOptionList,admin,2024-12-06 15:29:20,0.008
+2024-12-06 15:29:20,815 [http-nio-9090-exec-9] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getCourseItemOptionList,admin,2024-12-06 15:29:20,0.006
+2024-12-06 18:13:55,421 [http-nio-9090-exec-10] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/auth/getValidateCode,,2024-12-06 18:13:55,0.091
+2024-12-06 18:14:03,537 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51m28s815ms880µs600ns).
+2024-12-06 20:23:28,250 [http-nio-9090-exec-2] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getScoreList,admin,2024-12-06 20:23:28,0.075
+2024-12-06 20:23:28,287 [http-nio-9090-exec-3] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getStudentItemOptionList,admin,2024-12-06 20:23:28,0.008
+2024-12-06 20:23:28,311 [http-nio-9090-exec-4] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/score/getCourseItemOptionList,admin,2024-12-06 20:23:28,0.01
+2024-12-06 20:50:33,655 [http-nio-9090-exec-5] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/auth/getValidateCode,,2024-12-06 20:50:33,0.032
+2024-12-06 20:50:52,372 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m16s551ms750µs400ns).
+2024-12-06 22:28:43,677 [http-nio-9090-exec-6] INFO  o.f.teach.security.jwt.AuthTokenFilter             - /api/auth/getValidateCode,,2024-12-06 22:28:43,0.041
