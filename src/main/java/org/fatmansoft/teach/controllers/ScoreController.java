@@ -90,11 +90,14 @@ public class ScoreController {
             if(op.isPresent())
                 s = op.get();
         }
+        if(scoreRepository.findByStudentStudentIdAndCourseCourseId(studentId,courseId).isPresent()){
+            return CommonMethod.getReturnMessageError("该学生已存在该课程的成绩");
+        }
         if(s == null) {
             s = new Score();
+            s.setStudent(studentRepository.findById(studentId).get());
+            s.setCourse(courseRepository.findById(courseId).get());
         }
-        s.setStudent(studentRepository.findById(studentId).get());
-        s.setCourse(courseRepository.findById(courseId).get());
         s.setMark(mark);
         scoreRepository.save(s);
         return CommonMethod.getReturnMessageOK();
@@ -102,8 +105,7 @@ public class ScoreController {
     @PostMapping("/scoreDelete")
     public DataResponse scoreDelete(@Valid @RequestBody DataRequest dataRequest) {
         Integer scoreId = dataRequest.getInteger("scoreId");
-
-         Optional<Score> op;
+        Optional<Score> op;
         Score s = null;
         if(scoreId != null) {
             op= scoreRepository.findById(scoreId);

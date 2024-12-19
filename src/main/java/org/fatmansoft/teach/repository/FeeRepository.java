@@ -1,19 +1,18 @@
 package org.fatmansoft.teach.repository;
 
 import org.fatmansoft.teach.models.Fee;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 import java.util.Optional;
-/**
- * Fee 数据操作接口，主要实现Person数据的查询操作
- * Integer getMaxId()  Fee 表中的最大的fee_id;    JPQL 注解
- * Optional<Fee> findByStudentIdAndDay(Integer studentId, String day);  根据student_id 和day 查询获得Option<Fee>对象,  命名规范
- * List<Fee> findListByStudent(Integer studentId);  查询学生（student_id）所有的消费记录  JPQL 注解
- */
-public interface FeeRepository extends JpaRepository<Fee,Integer> {
 
+public interface FeeRepository extends JpaRepository<Fee,Integer> {
+    Optional<Fee> findByPersonPersonId(Integer personId);
+    Optional<Fee> findByPersonNum(String num);
+    List<Fee> findByPersonName(String name);
     Optional<Fee> findByStudentStudentIdAndDay(Integer studentId, String day);
 
     @Query(value= "from Fee where student.studentId=?1 order by day")
@@ -22,4 +21,13 @@ public interface FeeRepository extends JpaRepository<Fee,Integer> {
     @Query(value = "select sum(money) from Fee where student.studentId=?1 and day like ?2%")
     Double getMoneyByStudentIdAndDate(Integer studentId,String date);
 
+    @Query(value = "from Fee where ?1='' or person.num like %?1% or person.name like %?1% ")
+    List<Fee> findFeeListByNumName(String numName);
+
+    @Query(value="select s from Fee s, User u where u.person.personId = s.person.personId and u.userId=?1")
+    Optional<Fee> findByUserId(Integer userId);
+
+    @Query(value = "from Fee where ?1='' or person.num like %?1% or person.name like %?1% ",
+            countQuery = "SELECT count(studentId) from Student where ?1='' or person.num like %?1% or person.name like %?1% ")
+    Page<Fee> findFeePageByNumName(String numName,  Pageable pageable);
 }
