@@ -70,7 +70,7 @@ public class FeeController {
      */
     public List getfeeMapList(String numName) {
         List dataList = new ArrayList();
-        List<Fee> sList = feeRepository.findFeeListByNumName(numName);  //数据库查询操作
+        List<Fee> sList = feeRepository.findFeeListByStudentNumName(numName);  //数据库查询操作
         if (sList == null || sList.size() == 0)
             return dataList;
         for (int i = 0; i < sList.size(); i++) {
@@ -83,6 +83,9 @@ public class FeeController {
     @PreAuthorize("hasRole('ADMIN')")
     public DataResponse getfeeList(@Valid @RequestBody DataRequest dataRequest) {
         String numName = dataRequest.getString("numName");
+        if (numName==null){
+            numName="";
+        }
         List dataList = getfeeMapList(numName);
         return CommonMethod.getReturnData(dataList);  //按照测试框架规范会送Map的list
     }
