@@ -2,4 +2,5 @@
 .DS_Store
 /logs
 /.idea
-/.idea
+*.js
+

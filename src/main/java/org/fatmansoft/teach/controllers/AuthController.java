@@ -158,7 +158,7 @@ public class AuthController {
         u.setLoginCount(0);
         userRepository.saveAndFlush(u);
         if("STUDENT".equals(role)) {
-           Student s = new Student();   // 创建实体对象
+            Student s = new Student();   // 创建实体对象
             s.setPerson(p);
             studentRepository.saveAndFlush(s);  //插入新的Student记录
         }else if("TEACHER".equals(role)) {
